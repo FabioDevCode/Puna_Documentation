@@ -1,15 +1,15 @@
 ---
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
-tagline: 
-actionText: Quick Start →
+heroImage: /img/logo.png
+tagline: Collectez et gérez vos feedbacks en toute simplicité
+actionText: Commencer →
 actionLink: /guide/
 features:
-- title: Feature 1 Title
-  details: Feature 1 Description
-- title: Feature 2 Title
-  details: Feature 2 Description
-- title: Feature 3 Title
-  details: Feature 3 Description
-footer: Made by  with ❤️
+  - title: 📋 Collecte de formulaires
+    details: Recevez les soumissions de vos formulaires web via une API REST sécurisée. Support JSON et multipart/form-data avec fichiers joints.
+  - title: 🔒 Sécurité renforcée
+    details: Authentification triple couche (header + JWT chiffré AES + code formulaire), protection CSRF, XSS, rate limiting et validation des fichiers.
+  - title: 📊 Dashboard intuitif
+    details: Consultez vos statistiques, filtrez vos soumissions, exportez en Excel/CSV et gérez vos sites depuis une interface centralisée.
+footer: Puna v0.0.1 (Beta) — Licence GNU AGPLv3 — Fabio RAMOS LOPES
 ---
