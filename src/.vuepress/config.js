@@ -2,11 +2,12 @@ const { description } = require('../../package')
 
 module.exports = {
   base: '/Puna_Documentation/',
-  title: 'Puna Documentation',
+  title: 'Puna - Documentation',
   description: description,
 
   head: [
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['link', { rel: 'icon', href: '/favicon.png' }],
+    ['meta', { name: 'theme-color', content: '#2F6EA9' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
@@ -19,10 +20,10 @@ module.exports = {
     lastUpdated: false,
     nav: [
       { text: 'Guide', link: '/guide/' },
-      { text: 'Intégration', link: '/integration/' },
-      { text: 'Sécurité', link: '/security/' },
+      // { text: 'Intégration', link: '/integration/' },
+      // { text: 'Sécurité', link: '/security/' },
       { text: 'FAQ', link: '/faq/' },
-      { text: 'Changelog', link: '/changelog/' }
+      // { text: 'Changelog', link: '/changelog/' }
     ],
     sidebar: {
       '/guide/': [
