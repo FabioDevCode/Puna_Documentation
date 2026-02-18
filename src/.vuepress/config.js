@@ -1,6 +1,7 @@
 const { description } = require('../../package')
 
 module.exports = {
+  base: '/Puna_Documentation/',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
