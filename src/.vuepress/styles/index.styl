@@ -71,3 +71,24 @@
 
   .feature-card
     max-width 100%
+
+// Cercles décoratifs en arrière-plan
+.bg-circle
+  position fixed
+  border-radius 50%
+  pointer-events none
+  z-index 0
+
+.bg-circle--top-right
+  width 1200px
+  height 1200px
+  top -500px
+  right -500px
+  background radial-gradient(circle, rgba(0, 117, 195, .3) 0%, transparent 70%)
+
+.bg-circle--bottom-left
+  width 1000px
+  height 1000px
+  bottom -400px
+  left -500px
+  background radial-gradient(circle, rgba(0, 117, 195, .3) 0%, transparent 70%)

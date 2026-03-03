@@ -20,7 +20,7 @@ module.exports = {
     lastUpdated: false,
     nav: [
       { text: 'Guide', link: '/guide/' },
-      // { text: 'Intégration', link: '/integration/' },
+      { text: 'Intégration', link: '/integration/' },
       // { text: 'Sécurité', link: '/security/' },
       { text: 'FAQ', link: '/faq/' },
       // { text: 'Changelog', link: '/changelog/' }
