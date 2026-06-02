@@ -13,6 +13,7 @@ module.exports = {
   ],
 
   themeConfig: {
+    logo: '/img/logo_puna_doc.png',
     repo: '',
     editLinks: false,
     docsDir: '',

@@ -4,7 +4,7 @@ heroImage: /img/logo_puna_doc.png
 tagline: Centralisez tous vos formulaires au même endroit
 actionText: Découvrir
 actionLink: /guide/
-footer: Puna v0.0.1 (Beta) - Licence GNU AGPLv3 - Fabio R. LOPES
+footer: Puna v1.0.0 - Licence GNU AGPLv3 - Fabio R. LOPES
 ---
 
 <div class="bg-circle bg-circle--top-right"></div>
