@@ -5,7 +5,7 @@
  */
 
 .home .hero img
-  max-height 200px!important
+  max-height 140px!important
   max-width 450px!important
 
 .custom-block.tip
@@ -16,11 +16,18 @@
   padding 0.6rem 1.6rem !important
   border-radius 8px !important
 
+.home .hero h1
+  font-weight 800
+
+.navbar .site-name
+  font-weight 700 !important
+
 .home .hero h1, .home .hero .description, .home .hero .action
   margin 0.8rem auto !important
 
 .home .hero .description
   margin .8rem auto 1.6rem auto !important
+  padding 0 20px !important
   max-width 100% !important
 
 
@@ -29,7 +36,7 @@
   display flex
   flex-wrap wrap
   justify-content center
-  gap 1.5rem
+  gap 2rem
   max-width 960px
   margin 2.5rem auto 0
   padding 0 2.5rem
@@ -40,7 +47,7 @@
   flex 1
   min-width 240px
   max-width 300px
-  text-align center
+  text-align left
 
   h3
     font-size 1.15rem
@@ -92,6 +99,10 @@
   bottom -400px
   left -500px
   background radial-gradient(circle, rgba(0, 117, 195, .3) 0%, transparent 70%)
+
+.logo
+  margin-left -0.25rem
+  margin-right 0px !important
 
 // Mobile navbar: burger on the right of search, sidebar opens from right
 @media (max-width: 719px)

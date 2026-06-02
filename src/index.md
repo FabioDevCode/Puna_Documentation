@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /img/logo_puna_doc.png
-tagline: Centralisez tous vos formulaires au même endroit
+tagline: Centralisez tous vos formulaires au même endroit. Un outil unique pour gérer les données de multiples sites. Récupérez données et fichiers simplement via une interface unifiée.
 actionText: Découvrir
 actionLink: /guide/
 footer: Puna v1.0.0 - Licence GNU AGPLv3 - Fabio R. LOPES
