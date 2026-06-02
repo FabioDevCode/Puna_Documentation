@@ -92,3 +92,33 @@
   bottom -400px
   left -500px
   background radial-gradient(circle, rgba(0, 117, 195, .3) 0%, transparent 70%)
+
+// Mobile navbar: burger on the right of search, sidebar opens from right
+@media (max-width: 719px)
+  .navbar
+    .sidebar-button
+      position absolute
+      right 0.75rem
+      left auto
+
+  header.navbar
+    padding-left 1rem
+
+  // Leave room so search does not overlap the burger icon
+  .navbar .links
+    margin-right 2.5rem
+
+  .navbar .search-box
+    margin-right 0.5rem
+
+  // Open the sidebar from the right edge
+  .sidebar
+    left auto
+    right 0
+    transform translateX(100%)
+    border-left 1px solid $borderColor
+    border-right none
+
+  .sidebar.open,
+  .theme-container.sidebar-open .sidebar
+    transform translateX(0)
