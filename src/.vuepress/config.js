@@ -20,75 +20,86 @@ module.exports = {
     editLinkText: '',
     lastUpdated: false,
     nav: [
+      { text: 'Démarrage', link: '/demarrage/' },
       { text: 'Guide', link: '/guide/' },
-      { text: 'Intégration', link: '/integration/' },
-      // { text: 'Sécurité', link: '/security/' },
+      { text: 'API', link: '/api/' },
+      { text: 'MCP & IA', link: '/mcp/' },
       { text: 'FAQ', link: '/faq/' },
-      // { text: 'Changelog', link: '/changelog/' }
     ],
     sidebar: {
+      '/demarrage/': [
+        {
+          title: 'Démarrage',
+          collapsable: false,
+          children: [
+            '',
+            'prerequis',
+            'installation-dev',
+            'installation-production',
+            'configuration',
+          ]
+        }
+      ],
       '/guide/': [
         {
-          title: 'Guide',
+          title: "Guide d'utilisation",
           collapsable: false,
           children: [
             '',
-            'getting-started',
-            'dashboard',
+            'connexion',
             'sites',
-            'forms',
-            'inbox',
-            'exports',
-            'tokens',
-            'beta-limits'
+            'formulaires',
+            'soumissions',
+            'profil',
+            'administration',
           ]
         }
       ],
-      '/integration/': [
+      '/api/': [
         {
-          title: 'Intégration',
+          title: 'Intégration API',
           collapsable: false,
           children: [
             '',
-            'api-reference',
-            'html-form',
-            'javascript-fetch',
-            'file-upload',
-            'rate-limiting'
+            'authentification',
+            'endpoints',
+            'format-donnees',
+            'codes-erreur',
+          ]
+        },
+        {
+          title: 'Exemples',
+          collapsable: false,
+          children: [
+            'exemples/javascript',
+            'exemples/php',
+            'exemples/python',
           ]
         }
       ],
-      '/security/': [
+      '/mcp/': [
         {
-          title: 'Sécurité',
+          title: 'MCP & IA',
           collapsable: false,
           children: [
             '',
-            'authentication',
-            'api-auth',
-            'file-validation',
-            'csrf-xss'
+            'connexion',
+            'outils',
+            'exemples',
           ]
         }
       ],
       '/faq/': [
         {
-          title: 'FAQ',
+          title: 'FAQ & Dépannage',
           collapsable: false,
           children: [
-            ''
+            '',
+            'depannage',
+            'contribuer',
           ]
         }
       ],
-      '/changelog/': [
-        {
-          title: 'Changelog',
-          collapsable: false,
-          children: [
-            ''
-          ]
-        }
-      ]
     }
   },
 
