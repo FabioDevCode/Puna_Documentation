@@ -10,6 +10,8 @@ Un formulaire est rattaché à un [site](./sites.md). Chaque formulaire possède
 
 Renseigner un **nom** et une **description** (facultative). Le formulaire est automatiquement rattaché au site courant.
 
+![Show d'un site](/img/3-site-show.png)
+
 ## Code du formulaire
 
 Le code du formulaire est l'identifiant unique utilisé dans l'URL d'envoi de l'API :
@@ -25,10 +27,6 @@ Il est visible dans la vue **"API"** du site. Pour l'utiliser, voir [Endpoint](.
 Puna détecte automatiquement les colonnes à partir de la **première soumission reçue** et les stocke dans `form.template`.
 
 Les soumissions suivantes sont normalisées par rapport à ce template, garantissant une structure cohérente dans l'affichage et les exports.
-
-## Statistiques
-
-La vue d'un formulaire affiche le nombre total de soumissions et la date de la dernière entrée.
 
 ## Supprimer un formulaire
 

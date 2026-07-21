@@ -2,7 +2,9 @@
   <img src="src/.vuepress/public/favicon.png" alt="Puna Logo" width="200" />
 </p>
 
-# Puna — Documentation
+# Puna - Documentation
+
+#### 🔨 En cours de construction...
 
 > Documentation officielle de **Puna**, application web self-hosted de collecte et gestion de feedbacks.
 

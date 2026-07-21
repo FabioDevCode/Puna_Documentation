@@ -16,7 +16,7 @@ Pour obtenir les valeurs nécessaires, voir [Authentification](../authentificati
 pip install requests
 ```
 
-## Exemple 1 — Envoi JSON
+## Exemple 1 - Envoi JSON
 
 ```python
 import requests
@@ -51,7 +51,7 @@ response.raise_for_status()  # lève une exception si code HTTP != 2xx
 result = response.json()  # {"success": True}
 ```
 
-## Exemple 2 — Envoi Multipart avec fichier joint
+## Exemple 2 - Envoi Multipart avec fichier joint
 
 ```python
 import requests
@@ -64,7 +64,7 @@ FILE_PATH       = "./devis_projet.pdf"
 headers = {
     "X-KEY-PUNA": PUNA_API_KEY,
     "Authorization": f"Bearer {PUNA_SITE_TOKEN}",
-    # Ne pas définir Content-Type manuellement — requests le fait avec le boundary
+    # Ne pas définir Content-Type manuellement - requests le fait avec le boundary
 }
 
 fields = {

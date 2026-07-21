@@ -41,7 +41,7 @@ Les volumes suivants sont créés automatiquement :
 
 ## Notes de production
 
-- Le port 3022 est exposé uniquement sur `127.0.0.1` — prévoir un reverse proxy (nginx, Caddy…).
+- Le port 3022 est exposé uniquement sur `127.0.0.1` - prévoir un reverse proxy (nginx, Caddy…).
 - ClamAV peut prendre environ 90 secondes au premier démarrage (téléchargement des signatures). Le healthcheck est configuré avec `start_period: 90s`.
 - ClamAV accède au stockage Puna en lecture seule via un volume partagé.
 

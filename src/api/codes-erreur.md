@@ -22,7 +22,7 @@ title: Codes d'erreur & bonnes pratiques
 
 ### Sécurité des credentials
 
-- Ne **jamais** exposer `API_KEY` côté client — toujours appeler l'API depuis un backend.
+- Ne **jamais** exposer `API_KEY` côté client - toujours appeler l'API depuis un backend.
 - Stocker le token JWT du site côté serveur uniquement.
 - Ne pas versionner le `.env` dans un dépôt public.
 
@@ -34,7 +34,7 @@ title: Codes d'erreur & bonnes pratiques
 
 ### Rate limiting (`429`)
 
-- Ne pas réessayer immédiatement un `429` — attendre avant de retenter.
+- Ne pas réessayer immédiatement un `429` - attendre avant de retenter.
 - Le rate limiting est appliqué **par IP** sur l'endpoint d'envoi.
 
 ### Tokens expirés

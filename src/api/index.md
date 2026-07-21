@@ -19,8 +19,8 @@ POST /api/v1/send/:code
 
 Chaque appel requiert **3 éléments** cumulatifs :
 
-1. **Header `X-KEY-PUNA`** — clé globale de l'application (variable `API_KEY` du `.env`)
-2. **Header `Authorization: Bearer <token>`** — token JWT du site, disponible dans la vue "API"
+1. **Header `X-KEY-PUNA`** - clé globale de l'application (variable `API_KEY` du `.env`)
+2. **Header `Authorization: Bearer <token>`** - token JWT du site, disponible dans la vue "API"
 3. **Code du formulaire dans l'URL**
 
 Voir [Authentification](./authentification.md) pour le détail de chaque élément.

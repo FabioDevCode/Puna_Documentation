@@ -2,7 +2,7 @@
 title: Dépannage
 ---
 
-# Dépannage — Erreurs courantes
+# Dépannage - Erreurs courantes
 
 ## Démarrage de l'application
 
@@ -12,7 +12,7 @@ Une ou plusieurs variables obligatoires manquent dans le `.env`. Vérifier le fi
 
 ---
 
-**L'application ne démarre pas — erreur de connexion à la base de données**
+**L'application ne démarre pas - erreur de connexion à la base de données**
 
 1. Vérifier que MariaDB est démarré et accessible.
 2. Contrôler les variables `DB_IP`, `DB_PORT`, `DB_USER`, `DB_PWD` et `DB_NAME` dans le `.env`.
@@ -59,5 +59,5 @@ Vérifier que le volume `puna_storage` est correctement monté sur `/app/storage
 **Le 2FA TOTP ne fonctionne pas**
 
 1. Vérifier que `TOTP_ENABLED=true` dans le `.env`.
-2. Synchroniser l'horloge du serveur (NTP) — le TOTP est sensible au décalage horaire.
+2. Synchroniser l'horloge du serveur (NTP) - le TOTP est sensible au décalage horaire.
 3. Rescanner le QR code depuis le [Profil](../guide/profil.md) pour réinitialiser la clé secrète.

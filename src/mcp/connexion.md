@@ -8,13 +8,13 @@ title: Connexion avec un client MCP
 
 Le serveur MCP doit être activé (`MCP_ENABLED=true` dans le [`.env`](../demarrage/configuration.md)) et Puna doit être accessible depuis le réseau du client MCP.
 
-## Étape 1 — Générer une clé MCP
+## Étape 1 - Générer une clé MCP
 
 1. Aller dans le [Profil](../guide/profil.md) → section **Clés MCP**.
 2. Cliquer sur **Créer une clé** et lui donner un nom libre (ex. : "Claude Desktop personnel").
-3. Copier le token généré — **il ne sera affiché qu'une seule fois**. En cas de perte, révoquer et recréer une clé.
+3. Copier le token généré - **il ne sera affiché qu'une seule fois**. En cas de perte, révoquer et recréer une clé.
 
-## Étape 2 — Configurer le client
+## Étape 2 - Configurer le client
 
 ### Claude Desktop
 

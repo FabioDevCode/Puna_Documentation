@@ -10,7 +10,7 @@ Les credentials (`X-KEY-PUNA`, token JWT) ne doivent **jamais** être exposés d
 Pour obtenir les valeurs nécessaires, voir [Authentification](../authentification.md).
 :::
 
-## Exemple 1 — Envoi JSON
+## Exemple 1 - Envoi JSON
 
 ```php
 <?php
@@ -54,7 +54,7 @@ $result = json_decode($response, true);
 // ['success' => true]
 ```
 
-## Exemple 2 — Envoi Multipart avec fichier joint
+## Exemple 2 - Envoi Multipart avec fichier joint
 
 ```php
 <?php
@@ -77,7 +77,7 @@ curl_setopt_array($ch, [
     CURLOPT_POST           => true,
     CURLOPT_POSTFIELDS     => $postFields,
     CURLOPT_HTTPHEADER     => [
-        // Ne pas définir Content-Type manuellement — cURL le fait automatiquement avec le boundary
+        // Ne pas définir Content-Type manuellement - cURL le fait automatiquement avec le boundary
         "X-KEY-PUNA: {$punaApiKey}",
         "Authorization: Bearer {$punaSiteToken}",
     ],

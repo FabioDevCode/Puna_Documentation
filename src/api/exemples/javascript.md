@@ -10,7 +10,7 @@ Les credentials (`X-KEY-PUNA`, token JWT) ne doivent **jamais** être exposés d
 Pour obtenir les valeurs nécessaires, voir [Authentification](../authentification.md).
 :::
 
-## Exemple 1 — Envoi JSON
+## Exemple 1 - Envoi JSON
 
 ```js
 // Valeurs à récupérer depuis :
@@ -54,7 +54,7 @@ await sendContactForm({
 });
 ```
 
-## Exemple 2 — Envoi Multipart avec fichier joint
+## Exemple 2 - Envoi Multipart avec fichier joint
 
 ```js
 import { FormData, File } from "node:buffer"; // Node.js >= 18
@@ -82,7 +82,7 @@ async function sendFormWithAttachment(fields, filePath) {
       headers: {
         "X-KEY-PUNA": PUNA_API_KEY,
         Authorization: `Bearer ${PUNA_SITE_TOKEN}`,
-        // Ne pas définir Content-Type manuellement — fetch le fait automatiquement avec le boundary
+        // Ne pas définir Content-Type manuellement - fetch le fait automatiquement avec le boundary
       },
       body: formData,
     },

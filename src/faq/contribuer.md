@@ -35,4 +35,4 @@ Toutes les interactions liées au projet (issues, PR, discussions) sont soumises
 
 ## Licence
 
-Puna est distribué sous licence **AGPLv3**. Toute modification distribuée — y compris les forks en production — doit rester sous AGPLv3 et rendre le code source accessible.
+Puna est distribué sous licence **AGPLv3**. Toute modification distribuée - y compris les forks en production - doit rester sous AGPLv3 et rendre le code source accessible.

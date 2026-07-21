@@ -1,8 +1,8 @@
 ---
-title: MCP & IA — Présentation
+title: MCP & IA - Présentation
 ---
 
-# MCP & IA — Présentation
+# MCP & IA - Présentation
 
 ## Qu'est-ce que le MCP ?
 
@@ -33,7 +33,7 @@ MCP_ENABLED=true
 POST /mcp
 ```
 
-Authentifié par un token Bearer — **clé MCP** générée depuis le [Profil](../guide/profil.md).
+Authentifié par un token Bearer - **clé MCP** générée depuis le [Profil](../guide/profil.md).
 
 ## Scopes disponibles
 

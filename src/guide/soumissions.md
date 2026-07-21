@@ -2,13 +2,11 @@
 title: Soumissions (Inbox)
 ---
 
-# Soumissions (Inbox)
+# Soumissions
 
-L'inbox regroupe toutes les soumissions reçues pour un formulaire donné.
+Les soumissions reçues sont affichées sous forme de liste dans la page d'un **Site** en fonction de l'onglet **Formulaire** sélectionné.
 
-## Accès
-
-Naviguer vers un formulaire via la sidebar → cliquer sur **Inbox**.
+![Liste des soumissions](/img/3-site-show.png)
 
 ## Filtres disponibles
 
@@ -22,6 +20,8 @@ La vue détail affiche :
 - Toutes les colonnes reçues (normalisées par rapport au [template du formulaire](./formulaires.md))
 - Les fichiers joints : miniature pour les images, lien de téléchargement pour les autres formats
 
+![Show d'une soumission](/img/4-inbox-soumission.png)
+
 ## Export
 
 | Format        | Contenu                                          |
@@ -33,10 +33,3 @@ La vue détail affiche :
 ## Suppression
 
 Les soumissions peuvent être supprimées individuellement ou en masse, selon le rôle de l'utilisateur.
-
-## Fichiers joints
-
-- Stockés dans `storage/uploads/`
-- **12 types MIME acceptés par défaut** (images, PDF, archives, documents Office…)
-- Scannés automatiquement par ClamAV si activé — un fichier infecté est rejeté à la réception
-- Voir [Authentification](../api/authentification.md) et [Format des données](../api/format-donnees.md) pour l'envoi de fichiers via l'API
