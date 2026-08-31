@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Connexion avec un client MCP | Puna - Documentation</title>
+    <meta name="generator" content="VuePress 1.5.3">
+    <link rel="icon" href="/favicon.png">
+    <meta name="description" content="Puna Documentation">
+    <meta name="theme-color" content="#2F6EA9">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="preload" href="/assets/css/0.styles.bfbf469d.css" as="style"><link rel="preload" href="/assets/js/app.99241742.js" as="script"><link rel="preload" href="/assets/js/2.89c154dc.js" as="script"><link rel="preload" href="/assets/js/32.9349df1b.js" as="script"><link rel="prefetch" href="/assets/js/10.7fbd3049.js"><link rel="prefetch" href="/assets/js/11.cc62aa0c.js"><link rel="prefetch" href="/assets/js/12.186c8b32.js"><link rel="prefetch" href="/assets/js/13.57d2cf76.js"><link rel="prefetch" href="/assets/js/14.fcc8479a.js"><link rel="prefetch" href="/assets/js/15.646b6487.js"><link rel="prefetch" href="/assets/js/16.23919702.js"><link rel="prefetch" href="/assets/js/17.832505dd.js"><link rel="prefetch" href="/assets/js/18.773cc773.js"><link rel="prefetch" href="/assets/js/19.6af48acd.js"><link rel="prefetch" href="/assets/js/20.47409061.js"><link rel="prefetch" href="/assets/js/21.ce7f7035.js"><link rel="prefetch" href="/assets/js/22.f8fe04bc.js"><link rel="prefetch" href="/assets/js/23.7e29b102.js"><link rel="prefetch" href="/assets/js/24.61d49fdc.js"><link rel="prefetch" href="/assets/js/25.d510b34d.js"><link rel="prefetch" href="/assets/js/26.93f26a70.js"><link rel="prefetch" href="/assets/js/27.3a39d048.js"><link rel="prefetch" href="/assets/js/28.e6d9c230.js"><link rel="prefetch" href="/assets/js/29.65548a28.js"><link rel="prefetch" href="/assets/js/3.5343c37f.js"><link rel="prefetch" href="/assets/js/30.d3e9d019.js"><link rel="prefetch" href="/assets/js/31.4f128dae.js"><link rel="prefetch" href="/assets/js/33.f7017e10.js"><link rel="prefetch" href="/assets/js/34.34538a74.js"><link rel="prefetch" href="/assets/js/35.0dd8b4eb.js"><link rel="prefetch" href="/assets/js/4.92a1d795.js"><link rel="prefetch" href="/assets/js/5.a9228320.js"><link rel="prefetch" href="/assets/js/6.7c399b42.js"><link rel="prefetch" href="/assets/js/7.51a3d63d.js"><link rel="prefetch" href="/assets/js/8.7df76131.js"><link rel="prefetch" href="/assets/js/9.7642316b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.bfbf469d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/logo_puna_doc.png" alt="Puna - Documentation" class="logo"> <span class="site-name can-hide">Puna - Documentation</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/demarrage/" class="nav-link">
+  Démarrage
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/api/" class="nav-link">
+  API
+</a></div><div class="nav-item"><a href="/mcp/" class="nav-link router-link-active">
+  MCP &amp; IA
+</a></div><div class="nav-item"><a href="/faq/" class="nav-link">
+  FAQ
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/demarrage/" class="nav-link">
+  Démarrage
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/api/" class="nav-link">
+  API
+</a></div><div class="nav-item"><a href="/mcp/" class="nav-link router-link-active">
+  MCP &amp; IA
+</a></div><div class="nav-item"><a href="/faq/" class="nav-link">
+  FAQ
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>MCP &amp; IA</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mcp/" aria-current="page" class="sidebar-link">MCP &amp; IA - Présentation</a></li><li><a href="/mcp/connexion.html" aria-current="page" class="active sidebar-link">Connexion avec un client MCP</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/mcp/connexion.html#prerequis" class="sidebar-link">Prérequis</a></li><li class="sidebar-sub-header"><a href="/mcp/connexion.html#etape-1-generer-une-cle-mcp" class="sidebar-link">Étape 1 - Générer une clé MCP</a></li><li class="sidebar-sub-header"><a href="/mcp/connexion.html#etape-2-configurer-le-client" class="sidebar-link">Étape 2 - Configurer le client</a></li><li class="sidebar-sub-header"><a href="/mcp/connexion.html#revocation-d-une-cle" class="sidebar-link">Révocation d'une clé</a></li></ul></li><li><a href="/mcp/outils.html" class="sidebar-link">Outils disponibles</a></li><li><a href="/mcp/exemples.html" class="sidebar-link">Exemples d'utilisation MCP</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="connexion-avec-un-client-mcp"><a href="#connexion-avec-un-client-mcp" class="header-anchor">#</a> Connexion avec un client MCP</h1> <h2 id="prerequis"><a href="#prerequis" class="header-anchor">#</a> Prérequis</h2> <p>Le serveur MCP doit être activé (<code>MCP_ENABLED=true</code> dans le <a href="/demarrage/configuration.html"><code>.env</code></a>) et Puna doit être accessible depuis le réseau du client MCP.</p> <h2 id="etape-1-generer-une-cle-mcp"><a href="#etape-1-generer-une-cle-mcp" class="header-anchor">#</a> Étape 1 - Générer une clé MCP</h2> <ol><li>Aller dans le <a href="/guide/profil.html">Profil</a> → section <strong>Clés MCP</strong>.</li> <li>Cliquer sur <strong>Créer une clé</strong> et lui donner un nom libre (ex. : &quot;Claude Desktop personnel&quot;).</li> <li>Copier le token généré - <strong>il ne sera affiché qu'une seule fois</strong>. En cas de perte, révoquer et recréer une clé.</li></ol> <h2 id="etape-2-configurer-le-client"><a href="#etape-2-configurer-le-client" class="header-anchor">#</a> Étape 2 - Configurer le client</h2> <h3 id="claude-desktop"><a href="#claude-desktop" class="header-anchor">#</a> Claude Desktop</h3> <p>Ajouter dans <code>claude_desktop_config.json</code> (accessible via les paramètres de Claude Desktop) :</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;mcpServers&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;puna&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://votre-puna.example.com/mcp&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;headers&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;Authorization&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Bearer VOTRE_CLE_MCP&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Remplacer <code>VOTRE_CLE_MCP</code> par le token copié à l'étape précédente, et <code>votre-puna.example.com</code> par le domaine de votre instance Puna.</p> <h3 id="cursor"><a href="#cursor" class="header-anchor">#</a> Cursor</h3> <p>Dans les paramètres MCP de Cursor (<strong>Settings → MCP</strong>), ajouter un serveur HTTP :</p> <ul><li><strong>URL</strong> : <code>https://votre-puna.example.com/mcp</code></li> <li><strong>Header</strong> : <code>Authorization: Bearer VOTRE_CLE_MCP</code></li></ul> <h2 id="revocation-d-une-cle"><a href="#revocation-d-une-cle" class="header-anchor">#</a> Révocation d'une clé</h2> <p>Depuis le <a href="/guide/profil.html">Profil</a> → section <strong>Clés MCP</strong>, cliquer sur <strong>Révoquer</strong> en regard de la clé concernée. L'accès est immédiatement désactivé.</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mcp/" class="prev router-link-active">
+        MCP &amp; IA - Présentation
+      </a></span> <span class="next"><a href="/mcp/outils.html">
+        Outils disponibles
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.99241742.js" defer></script><script src="/assets/js/2.89c154dc.js" defer></script><script src="/assets/js/32.9349df1b.js" defer></script>
+  </body>
+</html>

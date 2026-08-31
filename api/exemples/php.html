@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Exemples PHP (cURL) | Puna - Documentation</title>
+    <meta name="generator" content="VuePress 1.5.3">
+    <link rel="icon" href="/favicon.png">
+    <meta name="description" content="Puna Documentation">
+    <meta name="theme-color" content="#2F6EA9">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="preload" href="/assets/css/0.styles.bfbf469d.css" as="style"><link rel="preload" href="/assets/js/app.99241742.js" as="script"><link rel="preload" href="/assets/js/2.89c154dc.js" as="script"><link rel="preload" href="/assets/js/12.186c8b32.js" as="script"><link rel="prefetch" href="/assets/js/10.7fbd3049.js"><link rel="prefetch" href="/assets/js/11.cc62aa0c.js"><link rel="prefetch" href="/assets/js/13.57d2cf76.js"><link rel="prefetch" href="/assets/js/14.fcc8479a.js"><link rel="prefetch" href="/assets/js/15.646b6487.js"><link rel="prefetch" href="/assets/js/16.23919702.js"><link rel="prefetch" href="/assets/js/17.832505dd.js"><link rel="prefetch" href="/assets/js/18.773cc773.js"><link rel="prefetch" href="/assets/js/19.6af48acd.js"><link rel="prefetch" href="/assets/js/20.47409061.js"><link rel="prefetch" href="/assets/js/21.ce7f7035.js"><link rel="prefetch" href="/assets/js/22.f8fe04bc.js"><link rel="prefetch" href="/assets/js/23.7e29b102.js"><link rel="prefetch" href="/assets/js/24.61d49fdc.js"><link rel="prefetch" href="/assets/js/25.d510b34d.js"><link rel="prefetch" href="/assets/js/26.93f26a70.js"><link rel="prefetch" href="/assets/js/27.3a39d048.js"><link rel="prefetch" href="/assets/js/28.e6d9c230.js"><link rel="prefetch" href="/assets/js/29.65548a28.js"><link rel="prefetch" href="/assets/js/3.5343c37f.js"><link rel="prefetch" href="/assets/js/30.d3e9d019.js"><link rel="prefetch" href="/assets/js/31.4f128dae.js"><link rel="prefetch" href="/assets/js/32.9349df1b.js"><link rel="prefetch" href="/assets/js/33.f7017e10.js"><link rel="prefetch" href="/assets/js/34.34538a74.js"><link rel="prefetch" href="/assets/js/35.0dd8b4eb.js"><link rel="prefetch" href="/assets/js/4.92a1d795.js"><link rel="prefetch" href="/assets/js/5.a9228320.js"><link rel="prefetch" href="/assets/js/6.7c399b42.js"><link rel="prefetch" href="/assets/js/7.51a3d63d.js"><link rel="prefetch" href="/assets/js/8.7df76131.js"><link rel="prefetch" href="/assets/js/9.7642316b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.bfbf469d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/logo_puna_doc.png" alt="Puna - Documentation" class="logo"> <span class="site-name can-hide">Puna - Documentation</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/demarrage/" class="nav-link">
+  Démarrage
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/api/" class="nav-link router-link-active">
+  API
+</a></div><div class="nav-item"><a href="/mcp/" class="nav-link">
+  MCP &amp; IA
+</a></div><div class="nav-item"><a href="/faq/" class="nav-link">
+  FAQ
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/demarrage/" class="nav-link">
+  Démarrage
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/api/" class="nav-link router-link-active">
+  API
+</a></div><div class="nav-item"><a href="/mcp/" class="nav-link">
+  MCP &amp; IA
+</a></div><div class="nav-item"><a href="/faq/" class="nav-link">
+  FAQ
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Intégration API</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/api/" aria-current="page" class="sidebar-link">Introduction API</a></li><li><a href="/api/authentification.html" class="sidebar-link">Authentification</a></li><li><a href="/api/endpoints.html" class="sidebar-link">Endpoint</a></li><li><a href="/api/format-donnees.html" class="sidebar-link">Format des données</a></li><li><a href="/api/codes-erreur.html" class="sidebar-link">Codes d'erreur &amp; bonnes pratiques</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Exemples</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/api/exemples/javascript.html" class="sidebar-link">Exemples JavaScript (Node.js)</a></li><li><a href="/api/exemples/php.html" aria-current="page" class="active sidebar-link">Exemples PHP (cURL)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/api/exemples/php.html#exemple-1-envoi-json" class="sidebar-link">Exemple 1 - Envoi JSON</a></li><li class="sidebar-sub-header"><a href="/api/exemples/php.html#exemple-2-envoi-multipart-avec-fichier-joint" class="sidebar-link">Exemple 2 - Envoi Multipart avec fichier joint</a></li></ul></li><li><a href="/api/exemples/python.html" class="sidebar-link">Exemples Python (requests)</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="exemples-php-curl"><a href="#exemples-php-curl" class="header-anchor">#</a> Exemples PHP (cURL)</h1> <div class="custom-block warning"><p class="custom-block-title">Appel depuis un serveur uniquement</p> <p>Les credentials (<code>X-KEY-PUNA</code>, token JWT) ne doivent <strong>jamais</strong> être exposés dans du code côté client. Ces exemples sont destinés à être exécutés depuis un <strong>backend PHP</strong>.</p> <p>Pour obtenir les valeurs nécessaires, voir <a href="/api/authentification.html">Authentification</a>.</p></div> <h2 id="exemple-1-envoi-json"><a href="#exemple-1-envoi-json" class="header-anchor">#</a> Exemple 1 - Envoi JSON</h2> <div class="language-php extra-class"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+
+<span class="token comment">// Valeurs à récupérer depuis :</span>
+<span class="token comment">// - API_KEY du .env  → header X-KEY-PUNA</span>
+<span class="token comment">// - Vue &quot;API&quot; du site → Authorization Bearer</span>
+<span class="token comment">// - Vue &quot;API&quot; du formulaire → code dans l'URL</span>
+<span class="token variable">$punaApiKey</span>   <span class="token operator">=</span> <span class="token string single-quoted-string">'gk_prod_7f3a2b9c'</span><span class="token punctuation">;</span>
+<span class="token variable">$punaSiteToken</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzaXRlSWQiOjEsImNjIjoiYWJjMTIzIn0.SIGNATURE'</span><span class="token punctuation">;</span>
+<span class="token variable">$formCode</span>     <span class="token operator">=</span> <span class="token string single-quoted-string">'contact_acme_corp'</span><span class="token punctuation">;</span>
+
+<span class="token variable">$payload</span> <span class="token operator">=</span> <span class="token function">json_encode</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token string single-quoted-string">'nom'</span>     <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">'Alice Martin'</span><span class="token punctuation">,</span>
+    <span class="token string single-quoted-string">'email'</span>   <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">'alice@example.com'</span><span class="token punctuation">,</span>
+    <span class="token string single-quoted-string">'message'</span> <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">'Bonjour, je souhaite obtenir un devis.'</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token variable">$ch</span> <span class="token operator">=</span> <span class="token function">curl_init</span><span class="token punctuation">(</span><span class="token string double-quoted-string">&quot;https://votre-puna.example.com/api/v1/send/<span class="token interpolation"><span class="token punctuation">{</span><span class="token variable">$formCode</span><span class="token punctuation">}</span></span>&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">curl_setopt_array</span><span class="token punctuation">(</span><span class="token variable">$ch</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
+    <span class="token constant">CURLOPT_RETURNTRANSFER</span> <span class="token operator">=&gt;</span> <span class="token constant boolean">true</span><span class="token punctuation">,</span>
+    <span class="token constant">CURLOPT_POST</span>           <span class="token operator">=&gt;</span> <span class="token constant boolean">true</span><span class="token punctuation">,</span>
+    <span class="token constant">CURLOPT_POSTFIELDS</span>     <span class="token operator">=&gt;</span> <span class="token variable">$payload</span><span class="token punctuation">,</span>
+    <span class="token constant">CURLOPT_HTTPHEADER</span>     <span class="token operator">=&gt;</span> <span class="token punctuation">[</span>
+        <span class="token string single-quoted-string">'Content-Type: application/json'</span><span class="token punctuation">,</span>
+        <span class="token string double-quoted-string">&quot;X-KEY-PUNA: <span class="token interpolation"><span class="token punctuation">{</span><span class="token variable">$punaApiKey</span><span class="token punctuation">}</span></span>&quot;</span><span class="token punctuation">,</span>
+        <span class="token string double-quoted-string">&quot;Authorization: Bearer <span class="token interpolation"><span class="token punctuation">{</span><span class="token variable">$punaSiteToken</span><span class="token punctuation">}</span></span>&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token variable">$response</span> <span class="token operator">=</span> <span class="token function">curl_exec</span><span class="token punctuation">(</span><span class="token variable">$ch</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$httpCode</span> <span class="token operator">=</span> <span class="token function">curl_getinfo</span><span class="token punctuation">(</span><span class="token variable">$ch</span><span class="token punctuation">,</span> <span class="token constant">CURLINFO_HTTP_CODE</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">curl_close</span><span class="token punctuation">(</span><span class="token variable">$ch</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$httpCode</span> <span class="token operator">!==</span> <span class="token number">200</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token variable">$error</span> <span class="token operator">=</span> <span class="token function">json_decode</span><span class="token punctuation">(</span><span class="token variable">$response</span><span class="token punctuation">,</span> <span class="token constant boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">RuntimeException</span><span class="token punctuation">(</span><span class="token string double-quoted-string">&quot;Erreur Puna <span class="token interpolation"><span class="token punctuation">{</span><span class="token variable">$httpCode</span><span class="token punctuation">}</span></span>: &quot;</span> <span class="token operator">.</span> <span class="token punctuation">(</span><span class="token variable">$error</span><span class="token punctuation">[</span><span class="token string single-quoted-string">'error'</span><span class="token punctuation">]</span> <span class="token operator">??</span> <span class="token string single-quoted-string">'Inconnue'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token variable">$result</span> <span class="token operator">=</span> <span class="token function">json_decode</span><span class="token punctuation">(</span><span class="token variable">$response</span><span class="token punctuation">,</span> <span class="token constant boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// ['success' =&gt; true]</span>
+</span></code></pre></div><h2 id="exemple-2-envoi-multipart-avec-fichier-joint"><a href="#exemple-2-envoi-multipart-avec-fichier-joint" class="header-anchor">#</a> Exemple 2 - Envoi Multipart avec fichier joint</h2> <div class="language-php extra-class"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+
+<span class="token variable">$punaApiKey</span>    <span class="token operator">=</span> <span class="token string single-quoted-string">'gk_prod_7f3a2b9c'</span><span class="token punctuation">;</span>
+<span class="token variable">$punaSiteToken</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzaXRlSWQiOjEsImNjIjoiYWJjMTIzIn0.SIGNATURE'</span><span class="token punctuation">;</span>
+<span class="token variable">$formCode</span>      <span class="token operator">=</span> <span class="token string single-quoted-string">'devis_acme_corp'</span><span class="token punctuation">;</span>
+<span class="token variable">$filePath</span>      <span class="token operator">=</span> <span class="token string single-quoted-string">'/chemin/vers/devis_projet.pdf'</span><span class="token punctuation">;</span>
+
+<span class="token variable">$postFields</span> <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token string single-quoted-string">'nom'</span>      <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">'Bob Dupont'</span><span class="token punctuation">,</span>
+    <span class="token string single-quoted-string">'email'</span>    <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">'bob@example.com'</span><span class="token punctuation">,</span>
+    <span class="token string single-quoted-string">'message'</span>  <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">'Voir document joint.'</span><span class="token punctuation">,</span>
+    <span class="token string single-quoted-string">'document'</span> <span class="token operator">=&gt;</span> <span class="token keyword">new</span> <span class="token class-name">CURLFile</span><span class="token punctuation">(</span><span class="token variable">$filePath</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'application/pdf'</span><span class="token punctuation">,</span> <span class="token function">basename</span><span class="token punctuation">(</span><span class="token variable">$filePath</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token variable">$ch</span> <span class="token operator">=</span> <span class="token function">curl_init</span><span class="token punctuation">(</span><span class="token string double-quoted-string">&quot;https://votre-puna.example.com/api/v1/send/<span class="token interpolation"><span class="token punctuation">{</span><span class="token variable">$formCode</span><span class="token punctuation">}</span></span>&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">curl_setopt_array</span><span class="token punctuation">(</span><span class="token variable">$ch</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
+    <span class="token constant">CURLOPT_RETURNTRANSFER</span> <span class="token operator">=&gt;</span> <span class="token constant boolean">true</span><span class="token punctuation">,</span>
+    <span class="token constant">CURLOPT_POST</span>           <span class="token operator">=&gt;</span> <span class="token constant boolean">true</span><span class="token punctuation">,</span>
+    <span class="token constant">CURLOPT_POSTFIELDS</span>     <span class="token operator">=&gt;</span> <span class="token variable">$postFields</span><span class="token punctuation">,</span>
+    <span class="token constant">CURLOPT_HTTPHEADER</span>     <span class="token operator">=&gt;</span> <span class="token punctuation">[</span>
+        <span class="token comment">// Ne pas définir Content-Type manuellement - cURL le fait automatiquement avec le boundary</span>
+        <span class="token string double-quoted-string">&quot;X-KEY-PUNA: <span class="token interpolation"><span class="token punctuation">{</span><span class="token variable">$punaApiKey</span><span class="token punctuation">}</span></span>&quot;</span><span class="token punctuation">,</span>
+        <span class="token string double-quoted-string">&quot;Authorization: Bearer <span class="token interpolation"><span class="token punctuation">{</span><span class="token variable">$punaSiteToken</span><span class="token punctuation">}</span></span>&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token variable">$response</span> <span class="token operator">=</span> <span class="token function">curl_exec</span><span class="token punctuation">(</span><span class="token variable">$ch</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$httpCode</span> <span class="token operator">=</span> <span class="token function">curl_getinfo</span><span class="token punctuation">(</span><span class="token variable">$ch</span><span class="token punctuation">,</span> <span class="token constant">CURLINFO_HTTP_CODE</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">curl_close</span><span class="token punctuation">(</span><span class="token variable">$ch</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$httpCode</span> <span class="token operator">!==</span> <span class="token number">200</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token variable">$error</span> <span class="token operator">=</span> <span class="token function">json_decode</span><span class="token punctuation">(</span><span class="token variable">$response</span><span class="token punctuation">,</span> <span class="token constant boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">RuntimeException</span><span class="token punctuation">(</span><span class="token string double-quoted-string">&quot;Erreur Puna <span class="token interpolation"><span class="token punctuation">{</span><span class="token variable">$httpCode</span><span class="token punctuation">}</span></span>: &quot;</span> <span class="token operator">.</span> <span class="token punctuation">(</span><span class="token variable">$error</span><span class="token punctuation">[</span><span class="token string single-quoted-string">'error'</span><span class="token punctuation">]</span> <span class="token operator">??</span> <span class="token string single-quoted-string">'Inconnue'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token variable">$result</span> <span class="token operator">=</span> <span class="token function">json_decode</span><span class="token punctuation">(</span><span class="token variable">$response</span><span class="token punctuation">,</span> <span class="token constant boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// ['success' =&gt; true]</span>
+</span></code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/api/exemples/javascript.html" class="prev">
+        Exemples JavaScript (Node.js)
+      </a></span> <span class="next"><a href="/api/exemples/python.html">
+        Exemples Python (requests)
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.99241742.js" defer></script><script src="/assets/js/2.89c154dc.js" defer></script><script src="/assets/js/12.186c8b32.js" defer></script>
+  </body>
+</html>
