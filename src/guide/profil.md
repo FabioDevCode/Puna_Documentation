@@ -6,7 +6,7 @@ title: Profil utilisateur
 
 La page Profil est accessible depuis le menu utilisateur en haut à droite de l'interface.
 
-![Profil utilisateur](/img/5-profile.png)
+<img :src="$withBase('/img/5-profile.png')" alt="Profil utilisateur">
 
 ## Informations du compte
 

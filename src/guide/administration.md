@@ -10,7 +10,7 @@ Les fonctionnalités d'administration sont accessibles aux rôles `super_admin` 
 
 Le tableau de bord admin affiche une synthèse globale : nombre total d'utilisateurs, de sites, de formulaires et de soumissions.
 
-![Administration](/img/6-administration.png)
+<img :src="$withBase('/img/6-administration.png')" alt="Administration">
 
 ## Gestion des utilisateurs
 
@@ -21,7 +21,7 @@ Depuis la vue Administration → Utilisateurs :
 - **Désactiver ou supprimer** un compte
 - **Assigner un utilisateur** à un ou plusieurs sites (pour les rôles `editor` et `viewer`)
 
-![Liste des utilisateurs](/img/7-user-list.png)
+<img :src="$withBase('/img/7-user-list.png')" alt="Liste des utilisateurs">
 
 ## Logs applicatifs
 
@@ -30,4 +30,4 @@ Puna intègre un visualiseur de logs directement dans l'interface d'administrati
 - Les logs sont stockés dans le dossier `logs/` avec rotation automatique quotidienne.
 - Les journaux couvrent les accès API, les erreurs applicatives et les actions d'audit.
 
-![Liste des utilisateurs](/img/8-logs.png)
+<img :src="$withBase('/img/8-logs.png')" alt="Liste des utilisateurs">

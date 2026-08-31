@@ -10,7 +10,7 @@ Un formulaire est rattaché à un [site](./sites.md). Chaque formulaire possède
 
 Renseigner un **nom** et une **description** (facultative). Le formulaire est automatiquement rattaché au site courant.
 
-![Show d'un site](/img/3-site-show.png)
+<img :src="$withBase('/img/3-site-show.png')" alt="Show d'un site">
 
 ## Code du formulaire
 

@@ -6,7 +6,7 @@ title: Soumissions (Inbox)
 
 Les soumissions reçues sont affichées sous forme de liste dans la page d'un **Site** en fonction de l'onglet **Formulaire** sélectionné.
 
-![Liste des soumissions](/img/3-site-show.png)
+<img :src="$withBase('/img/3-site-show.png')" alt="Liste des soumissions">
 
 ## Filtres disponibles
 
@@ -20,7 +20,7 @@ La vue détail affiche :
 - Toutes les colonnes reçues (normalisées par rapport au [template du formulaire](./formulaires.md))
 - Les fichiers joints : miniature pour les images, lien de téléchargement pour les autres formats
 
-![Show d'une soumission](/img/4-inbox-soumission.png)
+<img :src="$withBase('/img/4-inbox-soumission.png')" alt="Show d'une soumission">
 
 ## Export
 

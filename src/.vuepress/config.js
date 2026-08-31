@@ -1,7 +1,7 @@
 const { description } = require('../../package')
 
 module.exports = {
-  base: '/Puna_Documentation/',
+  base: process.env.VUEPRESS_BASE || '/',
   title: 'Puna - Documentation',
   description: description,
 

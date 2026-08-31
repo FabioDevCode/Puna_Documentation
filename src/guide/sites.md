@@ -6,7 +6,7 @@ title: Gestion des sites
 
 Un site représente un domaine ou une application web depuis lequel des soumissions sont envoyées à Puna.
 
-![Liste des sites](/img/2-site-list.png)
+<img :src="$withBase('/img/2-site-list.png')" alt="Liste des sites">
 
 ## Créer un site
 
@@ -16,7 +16,7 @@ Renseigner un **nom** et un **domaine** (utilisé à titre indicatif). Un token 
 
 La vue d'un site affiche la liste de ses formulaires ainsi que des statistiques globales (nombre de soumissions, dernière entrée).
 
-![Show d'un site](/img/3-site-show.png)
+<img :src="$withBase('/img/3-site-show.png')" alt="Show d'un site">
 
 ## Token JWT du site
 
